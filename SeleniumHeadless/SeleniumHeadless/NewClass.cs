@@ -16,7 +16,7 @@ namespace SeleniumHeadless
         public void Testt()
         {
             var options = new AppiumOptions();
-            options.AddAdditionalCapability("app", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App");
+            options.AddAdditionalCapability("app", SYNKAppId);
             options.AddAdditionalCapability("deviceName", "WindowsPC");
             options.AddAdditionalCapability("isHeadless", true);
            

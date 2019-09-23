@@ -10,7 +10,7 @@ namespace SeleniumHeadless
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Aftonbladet()
         {
             var options = new ChromeOptions();
             options.AddArguments("headless");
