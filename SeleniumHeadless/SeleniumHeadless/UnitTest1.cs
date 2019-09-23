@@ -18,12 +18,12 @@ namespace SeleniumHeadless
             var browser = new ChromeDriver(options);
 
             
-            browser.Navigate().GoToUrl("http://www.aftonbladet.se");
+            browser.Navigate().GoToUrl("http://www.apple.com");
             //  browser.FindElementByName("Google").SendKeys("Aftonbladet");
             // browser.FindElementByName("Sök åå Google").Click();
             var t = browser.Title;
             Console.WriteLine(t);
-            Assert.AreEqual(t, "Aftonbladet: De senaste nyheterna, Sveriges största nyhetssajtt");
+            browser.FindElementByLinkText("Mac").Click();
         
         }
         /*[TestMethod]
