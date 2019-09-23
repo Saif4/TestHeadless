@@ -22,6 +22,7 @@ namespace SeleniumHeadless
             //  browser.FindElementByName("Google").SendKeys("Aftonbladet");
             // browser.FindElementByName("Sök åå Google").Click();
             var t = browser.Title;
+            Console.WriteLine(browser);
         
         }
         /*[TestMethod]
