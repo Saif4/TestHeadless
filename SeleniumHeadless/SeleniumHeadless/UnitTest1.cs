@@ -13,8 +13,8 @@ namespace SeleniumHeadless
         public void Aftonbladet()
         {
             var options = new ChromeOptions();
-            options.AddArguments("headless");
-            options.AddArguments("disable-gpu");
+          //  options.AddArguments("headless");
+          //  options.AddArguments("disable-gpu");
             var browser = new ChromeDriver(options);
 
             
