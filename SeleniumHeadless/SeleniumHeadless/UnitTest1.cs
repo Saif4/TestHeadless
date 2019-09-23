@@ -9,7 +9,7 @@ namespace SeleniumHeadless
     [TestClass]
     public class UnitTest1
     {
-        [TestMethod]
+      /*  [TestMethod]
         public void Aftonbladet()
         {
             var options = new ChromeOptions();
@@ -22,8 +22,8 @@ namespace SeleniumHeadless
             //  browser.FindElementByName("Google").SendKeys("Aftonbladet");
             // browser.FindElementByName("Sök åå Google").Click();
             var t = browser.Title;
-            
-        }
+        
+        }*/
         [TestMethod]
         public void headless()
         {
