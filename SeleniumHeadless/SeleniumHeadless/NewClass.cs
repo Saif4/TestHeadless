@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace SeleniumHeadless
@@ -22,6 +23,8 @@ namespace SeleniumHeadless
            
             options.AddAdditionalCapability("avdArgs", "-no-window");
             session = new WindowsDriver<WindowsElement>(new Uri(windowsApplicationDriverUrl), options);
+
+            Thread.Sleep(4);
             session.FindElementByAccessibilityId("txtKundNr").SendKeys("123456");
             session.FindElementByName("Aktivera").Click();
         }
