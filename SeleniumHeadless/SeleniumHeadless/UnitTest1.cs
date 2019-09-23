@@ -10,7 +10,7 @@ namespace SeleniumHeadless
     public class UnitTest1
     {
         [TestMethod]
-        public void Aftonbladet()
+        public void Test()
         {
             var options = new ChromeOptions();
           //  options.AddArguments("headless");
@@ -29,12 +29,12 @@ namespace SeleniumHeadless
 
 
         }
-        /*[TestMethod]
-        public void headless()
+        [TestMethod]
+        public void headlessSynk()
         {
 
-            NewClass newClass = new NewClass();
-            newClass.Testt();
-        }*/
+            SYNK synktest = new SYNK();
+            synktest.TestavSynk();
+        }
     }
 }
