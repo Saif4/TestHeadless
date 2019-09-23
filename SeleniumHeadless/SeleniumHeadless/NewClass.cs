@@ -22,6 +22,8 @@ namespace SeleniumHeadless
            
             options.AddAdditionalCapability("avdArgs", "-no-window");
             session = new WindowsDriver<WindowsElement>(new Uri(windowsApplicationDriverUrl), options);
+            session.FindElementByAccessibilityId("txtKundNr").SendKeys("123456");
+            session.FindElementByName("Aktivera").Click();
         }
     }
 }
