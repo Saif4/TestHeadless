@@ -22,8 +22,8 @@ namespace SeleniumHeadless
             //  browser.FindElementByName("Google").SendKeys("Aftonbladet");
             // browser.FindElementByName("Sök åå Google").Click();
             var t = browser.Title;
-            Console.WriteLine(browser);
-            Assert.AreEqual(browser, "Afton");
+            Console.WriteLine(t);
+            Assert.AreEqual(t, "Aftonbladet: De senaste nyheterna, Sveriges största nyhetssajt");
         
         }
         /*[TestMethod]
