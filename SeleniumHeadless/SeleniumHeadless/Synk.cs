@@ -19,11 +19,7 @@ namespace SeleniumHeadless
             var options = new AppiumOptions();
             options.AddAdditionalCapability("app", SYNKAppId);
             options.AddAdditionalCapability("deviceName", "WindowsPC");
-            options.AddAdditionalCapability("no - sandbox", false);
-            options.AddAdditionalCapability("relaxed-security", false);
-            //  options.AddAdditionalCapability("isHeadless", true);
 
-            options.AddAdditionalCapability("avdArgs", "-no-window");
             session = new WindowsDriver<WindowsElement>(new Uri(windowsApplicationDriverUrl), options, TimeSpan.FromSeconds(5));
 
             var ValAvRedovisningsstället = session.FindElementByName("32701010");
