@@ -24,7 +24,10 @@ namespace SeleniumHeadless
             var t = browser.Title;
             Console.WriteLine(t);
             browser.FindElementByLinkText("Mac").Click();
-        
+            var url = browser.Url;
+            Assert.AreEqual(url, "https://www.apple.com/macc/");
+
+
         }
         /*[TestMethod]
         public void headless()
