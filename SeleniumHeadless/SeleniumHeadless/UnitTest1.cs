@@ -23,7 +23,7 @@ namespace SeleniumHeadless
             // browser.FindElementByName("Sök åå Google").Click();
             var t = browser.Title;
             Console.WriteLine(t);
-            Assert.AreEqual(t, "Aftonbladet: De senaste nyheterna, Sveriges största nyhetssajt");
+            Assert.AreEqual(t, "Aftonbladet: De senaste nyheterna, Sveriges största nyhetssajtt");
         
         }
         /*[TestMethod]
