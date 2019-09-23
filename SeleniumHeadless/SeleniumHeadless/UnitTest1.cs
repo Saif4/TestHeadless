@@ -23,6 +23,7 @@ namespace SeleniumHeadless
             // browser.FindElementByName("Sök åå Google").Click();
             var t = browser.Title;
             Console.WriteLine(browser);
+            Assert.AreEqual(browser, "Afton");
         
         }
         /*[TestMethod]
