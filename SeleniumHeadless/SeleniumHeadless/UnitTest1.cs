@@ -13,8 +13,8 @@ namespace Selenium
         public void Test()
         {
             var options = new ChromeOptions();
-          //  options.AddArguments("headless");
-          //  options.AddArguments("disable-gpu");
+            options.AddArguments("headless");
+          
             var browser = new ChromeDriver(options);
 
             
