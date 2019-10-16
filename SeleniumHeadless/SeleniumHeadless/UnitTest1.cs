@@ -4,10 +4,10 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Chrome;
 
-namespace SeleniumHeadless
+namespace Selenium
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTest
     {
         [TestMethod]
         public void Test()
@@ -25,16 +25,10 @@ namespace SeleniumHeadless
             Console.WriteLine(t);
             browser.FindElementByLinkText("Mac").Click();
             var url = browser.Url;
-            Assert.AreEqual(url, "https://www.apple.com/macc/");
+            Assert.AreEqual(url, "https://www.apple.com/mac/");
 
 
         }
-        [TestMethod]
-        public void headlessSynk()
-        {
-
-            SYNK synktest = new SYNK();
-            synktest.TestavSynk();
-        }
+ 
     }
 }
