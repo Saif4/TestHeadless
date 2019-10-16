@@ -13,7 +13,7 @@ namespace Selenium
         public void Test()
         {
             var options = new ChromeOptions();
-            options.AddArguments("headless");
+            //options.AddArguments("headless");
             var browser = new ChromeDriver(options);
 
             browser.Navigate().GoToUrl("http://www.apple.com");
