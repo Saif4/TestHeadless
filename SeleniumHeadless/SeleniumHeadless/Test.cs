@@ -12,8 +12,7 @@ namespace SeleniumHeadless
     {
         static void Main(string[] args)
         {
-           // NewClass newClass = new NewClass();
-           // newClass.Testt();
+          
         }
       
     
