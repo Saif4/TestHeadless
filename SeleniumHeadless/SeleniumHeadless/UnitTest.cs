@@ -21,7 +21,7 @@ namespace Selenium
             Console.WriteLine(t);
             browser.FindElementByLinkText("Mac").Click();
             var url = browser.Url;
-            Assert.AreEqual(url, "https://www.apple.com/mac/");/
+            Assert.AreEqual(url, "https://www.apple.com/mac/");//
         }
  
     }
