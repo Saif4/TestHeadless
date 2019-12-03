@@ -7,21 +7,22 @@ using OpenQA.Selenium.Chrome;
 namespace Selenium
 {
     [TestClass]
-    public class UnitTest
+    public class GoToWebSite
     {
         [TestMethod]
-        public void Test()
+        public void VerifyTitle()
         {
             var options = new ChromeOptions();
-            options.AddArguments("headless");
+           // options.AddArguments("headless");
             var browser = new ChromeDriver(options);
 
             browser.Navigate().GoToUrl("http://www.apple.com");
-            var t = browser.Title;
-            Console.WriteLine(t);
+            var title = browser.Title;
+            Console.WriteLine(title);
             browser.FindElementByLinkText("Mac").Click();
             var url = browser.Url;
-            Assert.AreEqual(url, "https://www.apple.com/mac/");//
+            Assert.AreEqual(url, "https://www.apple.com/mac/");
+            browser.Quit();
         }
  
     }
